@@ -1,0 +1,2 @@
+# Official standalone embedded-etcd/local-storage configuration.
+# No separate MinIO or etcd container is needed for this local deployment.

@@ -1,0 +1,38 @@
+[project]
+name = "deepresearch"
+version = "0.1.0"
+description = "SuperSgdk's personal multi-agent research project with web search, local RAG and evidence-based reports"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "LicenseRef-View-Only"
+authors = [{name = "SuperSgdk"}]
+dependencies = [
+  "langgraph==1.0.3",
+  "langgraph-checkpoint-redis==0.3.6",
+  "langgraph-checkpoint-postgres==3.0.5",
+  "fastapi==0.123.0",
+  "uvicorn[standard]==0.35.0",
+  "langchain==1.0.7",
+  "langchain-community==0.4.1",
+  "langchain-core==1.0.5",
+  "langchain-milvus==0.3.3",
+  "langchain-text-splitters==1.0.0",
+  "dashscope==1.25.1",
+  "pymilvus==2.6.4",
+  "psycopg[binary,pool]==3.3.3",
+  "redis==7.3.0",
+  "python-dotenv==1.1.0",
+  "pydantic-settings==2.12.0",
+  "typing-extensions==4.15.0",
+]
+
+[project.urls]
+Repository = "https://github.com/SuperSgdk/deepresearch"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["app"]
+include = ["backend*", "mult_agents*"]
